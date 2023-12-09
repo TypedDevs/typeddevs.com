@@ -1,0 +1,13 @@
+# Environment
+.env
+
+# NPM
+node_modules
+
+# Vitepress
+.vitepress/dist
+.vitepress/cache
+
+# Storybook
+build-storybook.log
+storybook-static

@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "prettier-plugin-css-order",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-multiline-arrays"
+  ],
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "singleAttributePerLine": true,
+  "printWidth": 120,
+  "multilineArraysWrapThreshold": 1
+}
