@@ -1,7 +1,7 @@
 <template>
-  <div class="team-list__list">
-    <h2>Team</h2>
+  <h2 class="team-list__title">Team</h2>
 
+  <div class="team-list__list">
     <MemberCard
       v-for="member of team"
       :key="member.name"
@@ -29,6 +29,12 @@ export default defineComponent({
 <style lang="scss">
 .team-list {
   &__list {
+    @apply mb-8 grid gap-8;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  }
+
+  &__title {
+    @apply mb-4 text-3xl font-bold leading-none;
   }
 }
 </style>

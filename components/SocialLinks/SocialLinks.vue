@@ -96,7 +96,7 @@ export default defineComponent({
   $p: &;
 
   &__list {
-    @apply flex w-fit flex-wrap;
+    @apply flex w-fit flex-wrap justify-evenly;
   }
 
   &__link {

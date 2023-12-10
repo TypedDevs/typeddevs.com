@@ -1,14 +1,20 @@
 <template>
-  <div class="member-bard__card">
+  <div class="member-card__card">
     <img
+      class="member-card__image"
       :src="member.image"
       :alt="`Profile picture of ${member.name}`"
     />
-    {{ member.name }}
+
+    <strong class="member-card__name">
+      {{ member.name }}
+    </strong>
+
     <SocialLinks
-      :linked-in-handle="member.linkedinHandle"
+      class="member-card__links"
+      :linked-in-handle="member.linkedInHandle"
       :x-handle="member.xHandle"
-      :git-hub-handle="member.githubHandle"
+      :git-hub-handle="member.gitHubHandle"
       :website="member.website"
     />
   </div>
@@ -31,8 +37,21 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.member-bard {
+.member-card {
   &__card {
+    @apply bg-gray-100;
+  }
+
+  &__image {
+    @apply w-full;
+  }
+
+  &__name {
+    @apply mx-4 mt-2 block text-center;
+  }
+
+  &__links {
+    @apply w-full px-2;
   }
 }
 </style>
