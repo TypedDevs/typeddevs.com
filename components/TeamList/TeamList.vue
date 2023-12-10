@@ -30,7 +30,10 @@ export default defineComponent({
 .team-list {
   &__list {
     @apply mb-16 grid gap-8;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+
+    @screen sm {
+      grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    }
   }
 
   &__title {

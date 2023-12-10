@@ -28,18 +28,18 @@ import SocialLinks from '@/components/SocialLinks/SocialLinks.vue'
     background-image: linear-gradient(
       to bottom,
       theme('colors.transparent'),
-      theme('colors.transparent') 1rem,
-      theme('colors.brand.yellow') 1rem,
-      theme('colors.brand.yellow') 1.8rem,
-      theme('colors.brand.orange') 1.8rem,
-      theme('colors.brand.orange') 2.6rem,
-      theme('colors.brand.red') 2.6rem,
-      theme('colors.brand.red') 3.4rem,
-      theme('colors.brand.maroon') 3.4rem,
-      theme('colors.brand.maroon') 4.2rem,
-      theme('colors.brand.gray') 4.2rem,
-      theme('colors.brand.gray') 5rem,
-      theme('colors.transparent') 5rem,
+      theme('colors.transparent') 18.75%,
+      theme('colors.brand.yellow') 18.75%,
+      theme('colors.brand.yellow') 31.25%,
+      theme('colors.brand.orange') 31.25%,
+      theme('colors.brand.orange') 43.75%,
+      theme('colors.brand.red') 43.75%,
+      theme('colors.brand.red') 56.25%,
+      theme('colors.brand.maroon') 56.25%,
+      theme('colors.brand.maroon') 68.75%,
+      theme('colors.brand.gray') 68.75%,
+      theme('colors.brand.gray') 81.25%,
+      theme('colors.transparent') 81.25%,
       theme('colors.transparent')
     );
   }
@@ -53,13 +53,21 @@ import SocialLinks from '@/components/SocialLinks/SocialLinks.vue'
   }
 
   &__logo {
-    @apply h-full;
+    @apply hidden h-full;
     grid-area: logo;
+
+    @screen sm {
+      @apply block;
+    }
   }
 
   &__title {
-    @apply w-full self-end text-right font-title text-2xl leading-none text-white;
+    @apply w-full self-end font-title text-2xl leading-none text-white;
     grid-area: title;
+
+    @screen sm {
+      @apply text-right;
+    }
   }
 
   &__links {
