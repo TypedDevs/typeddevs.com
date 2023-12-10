@@ -11,6 +11,7 @@
       <SocialLinks
         class="navigation-bar__links"
         linked-in-company-handle="typeddevs"
+        git-hub-handle="TypedDevs"
         x-handle="typeddevs"
       />
     </div>
