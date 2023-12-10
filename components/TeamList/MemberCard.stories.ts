@@ -18,7 +18,7 @@ export const Default: StoryObj<typeof MemberCard> = {
     member: {
       name: 'Octocat',
       image: 'images/team/emmanuel-valverde-ramos.jpg',
-      linkedInHandle: '404',
+      linkedInUserHandle: '404',
       xHandle: 'github',
       gitHubHandle: 'octocat',
       website: 'https://typeddevs.com/',

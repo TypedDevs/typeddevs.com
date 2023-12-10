@@ -9,7 +9,7 @@ export default {
 
 export const AllEnabled: StoryObj<typeof SocialLinks> = {
   args: {
-    linkedInHandle: '404',
+    linkedInUserHandle: '404',
     xHandle: 'github',
     gitHubHandle: 'octocat',
     website: 'https://typeddevs.com/',
@@ -18,7 +18,7 @@ export const AllEnabled: StoryObj<typeof SocialLinks> = {
 
 export const OnlyLinkedIn: StoryObj<typeof SocialLinks> = {
   args: {
-    linkedInHandle: '404',
+    linkedInUserHandle: '404',
   },
 }
 

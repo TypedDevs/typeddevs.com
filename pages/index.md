@@ -1,5 +1,3 @@
-# TypedDevs
-
 <TeamList :team="team" />
 
 <ProjectList :projects="projects" />

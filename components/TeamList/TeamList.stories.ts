@@ -13,7 +13,7 @@ export const Default: StoryObj<typeof TeamList> = {
       {
         name: 'Octocat',
         image: 'images/team/emmanuel-valverde-ramos.jpg',
-        linkedInHandle: '404',
+        linkedInUserHandle: '404',
         xHandle: 'github',
         gitHubHandle: 'octocat',
         website: 'https://typeddevs.com/',
@@ -21,7 +21,7 @@ export const Default: StoryObj<typeof TeamList> = {
       {
         name: 'Octocat',
         image: 'images/team/emmanuel-valverde-ramos.jpg',
-        linkedInHandle: '404',
+        linkedInUserHandle: '404',
         xHandle: 'github',
         gitHubHandle: 'octocat',
         website: 'https://typeddevs.com/',

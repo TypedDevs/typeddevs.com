@@ -19,6 +19,8 @@ export default {
     },
     colors: {
       transparent: '#00000000',
+      white: '#ffffff',
+      black: '#000000',
       brand: {
         yellow: '#fad01f',
         orange: '#ea6810',

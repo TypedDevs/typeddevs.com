@@ -12,7 +12,7 @@
 
     <SocialLinks
       class="member-card__links"
-      :linked-in-handle="member.linkedInHandle"
+      :linked-in-user-handle="member.linkedInUserHandle"
       :x-handle="member.xHandle"
       :git-hub-handle="member.gitHubHandle"
       :website="member.website"

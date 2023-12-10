@@ -1,9 +1,23 @@
 <template>
   <div class="social-links__list">
     <a
-      v-if="linkedInHandle"
+      v-if="linkedInUserHandle"
       class="social-links__link"
-      :href="`https://www.linkedin.com/in/${linkedInHandle}/`"
+      :href="`https://www.linkedin.com/in/${linkedInUserHandle}/`"
+      target="_blank"
+      title="LinkedIn"
+    >
+      <img
+        class="social-links__icon"
+        src="/images/linkedin.svg"
+        alt=""
+      />
+    </a>
+
+    <a
+      v-if="linkedInCompanyHandle"
+      class="social-links__link"
+      :href="`https://www.linkedin.com/company/${linkedInCompanyHandle}/`"
       target="_blank"
       title="LinkedIn"
     >
@@ -63,8 +77,14 @@ import { defineComponent, type PropType } from 'vue'
 
 export default defineComponent({
   props: {
-    /** Handle (last part of a custom URL) of a LinkedIn account */
-    linkedInHandle: {
+    /** Handle (last part of a custom URL) of a LinkedIn user account */
+    linkedInUserHandle: {
+      required: false,
+      default: null,
+      type: String as PropType<string | null>,
+    },
+    /** Handle (last part of a custom URL) of a LinkedIn company account */
+    linkedInCompanyHandle: {
       required: false,
       default: null,
       type: String as PropType<string | null>,
