@@ -3,13 +3,13 @@ import { createContentLoader } from 'vitepress'
 export interface Member {
   name: string
   image: string
-  linkedinHandle: string
-  xHandle: string
-  githubHandle: string
-  website: string
+  linkedinHandle: string | null
+  xHandle: string | null
+  githubHandle: string | null
+  website: string | null
 }
 
-export default createContentLoader<Member[]>('team/*.md', {
+export default createContentLoader<Member[]>('components/TeamList/data/*.md', {
   transform(projects) {
     return projects
       .map(
