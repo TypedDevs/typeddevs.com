@@ -39,7 +39,8 @@ export default defineComponent({
 <style lang="scss">
 .member-card {
   &__card {
-    @apply bg-gray-100;
+    @apply grid bg-gray-100;
+    grid-template-rows: auto 1fr auto;
   }
 
   &__image {

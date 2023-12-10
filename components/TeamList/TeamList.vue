@@ -29,12 +29,12 @@ export default defineComponent({
 <style lang="scss">
 .team-list {
   &__list {
-    @apply mb-8 grid gap-8;
+    @apply mb-16 grid gap-8;
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   }
 
   &__title {
-    @apply mb-4 text-3xl font-bold leading-none;
+    @apply mb-8 text-3xl font-bold leading-none;
   }
 }
 </style>

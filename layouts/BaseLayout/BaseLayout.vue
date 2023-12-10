@@ -23,7 +23,7 @@ export default defineComponent({
     @apply py-8;
 
     h1 {
-      @apply mb-8 bg-clip-text text-center font-title text-8xl font-bold leading-tight text-transparent;
+      @apply mb-16 bg-clip-text text-center font-title text-8xl font-bold leading-tight text-transparent;
 
       background-image: linear-gradient(
         to bottom,
