@@ -1,10 +1,10 @@
 <template>
   <div class="base-layout__container">
-    <NavigationBar />
-
     <div class="base-layout__content">
       <Content />
     </div>
+
+    <NavigationBar />
   </div>
 </template>
 
@@ -23,19 +23,19 @@ export default defineComponent({
     @apply py-8;
 
     h1 {
-      @apply my-8 bg-clip-text text-center font-title text-9xl font-bold leading-[1.125] text-transparent;
+      @apply font-title mb-8 bg-clip-text text-center text-9xl font-bold leading-tight text-transparent;
 
       background-image: linear-gradient(
         to bottom,
         theme('colors.brand.yellow'),
-        theme('colors.brand.yellow') 20%,
-        theme('colors.brand.orange') 20%,
-        theme('colors.brand.orange') 40%,
-        theme('colors.brand.red') 40%,
-        theme('colors.brand.red') 60%,
-        theme('colors.brand.maroon') 60%,
-        theme('colors.brand.maroon') 80%,
-        theme('colors.brand.gray') 80%,
+        theme('colors.brand.yellow') 36%,
+        theme('colors.brand.orange') 36%,
+        theme('colors.brand.orange') 52%,
+        theme('colors.brand.red') 52%,
+        theme('colors.brand.red') 68%,
+        theme('colors.brand.maroon') 68%,
+        theme('colors.brand.maroon') 84%,
+        theme('colors.brand.gray') 84%,
         theme('colors.brand.gray')
       );
     }
