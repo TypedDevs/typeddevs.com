@@ -1,14 +1,14 @@
 <template>
-  <div class="compact-social-links__list">
+  <div class="social-links__list">
     <a
       v-if="linkedInHandle"
-      class="compact-social-links__link"
+      class="social-links__link"
       :href="`https://www.linkedin.com/in/${linkedInHandle}/`"
       target="_blank"
       title="LinkedIn"
     >
       <img
-        class="compact-social-links__icon"
+        class="social-links__icon"
         src="/images/linkedin.svg"
         alt=""
       />
@@ -16,13 +16,13 @@
 
     <a
       v-if="xHandle"
-      class="compact-social-links__link"
+      class="social-links__link"
       :href="`https://twitter.com/${xHandle}`"
       target="_blank"
       title="X"
     >
       <img
-        class="compact-social-links__icon"
+        class="social-links__icon"
         src="/images/x-twitter.svg"
         alt=""
       />
@@ -30,13 +30,13 @@
 
     <a
       v-if="gitHubHandle"
-      class="compact-social-links__link"
+      class="social-links__link"
       :href="`https://github.com/${gitHubHandle}`"
       target="_blank"
       title="GitHub"
     >
       <img
-        class="compact-social-links__icon"
+        class="social-links__icon"
         src="/images/github.svg"
         alt=""
       />
@@ -44,13 +44,13 @@
 
     <a
       v-if="website"
-      class="compact-social-links__link"
+      class="social-links__link"
       :href="website"
       target="_blank"
       title="Website"
     >
       <img
-        class="compact-social-links__icon"
+        class="social-links__icon"
         src="/images/website.svg"
         alt=""
       />
@@ -92,7 +92,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.compact-social-links {
+.social-links {
   $p: &;
 
   &__list {
