@@ -46,10 +46,14 @@ import SocialLinks from '@/components/SocialLinks/SocialLinks.vue'
 
   &__container {
     @apply container mb-16 mt-8 grid h-24 grid-rows-2 gap-x-8;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-      'logo title'
-      'logo links';
+    grid-template-areas: 'title' 'links';
+
+    @screen sm {
+      grid-template-columns: auto 1fr;
+      grid-template-areas:
+        'logo title'
+        'logo links';
+    }
   }
 
   &__logo {
