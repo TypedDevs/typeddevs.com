@@ -1,7 +1,7 @@
-name: Checks (and Deploy on main)
+name: Checks
 
 on:
-  push:
+  pull_request:
 
   workflow_dispatch:
 
@@ -107,21 +107,3 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: .vitepress/dist
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs:
-      - static-analysis
-      - lint
-      - format
-      - stories
-      - build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    name: Deploy
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
