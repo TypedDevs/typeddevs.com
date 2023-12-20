@@ -6,6 +6,7 @@
       <img
         class="footer-section__logo"
         src="/images/logo.svg"
+        alt="TypedDevs logo"
       />
     </div>
   </footer>

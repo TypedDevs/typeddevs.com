@@ -4,6 +4,7 @@
       <img
         class="navigation-bar__logo"
         src="/images/logo.svg"
+        alt="TypedDevs logo"
       />
 
       <h1 class="navigation-bar__title">TypedDevs</h1>
