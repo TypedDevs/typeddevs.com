@@ -12,7 +12,33 @@ export default defineConfig({
       'link',
       { rel: 'icon', href: '/favicon.ico' },
     ],
+    [
+      'meta',
+      { property: 'og:type', content: 'website' },
+    ],
+    [
+      'meta',
+      { property: 'og:image', content: '/images/og-image.png' },
+    ],
   ],
+  transformHead(context) {
+    const canonical = context.page.replace(/(index)?\.md$/, '')
+
+    return [
+      [
+        'meta',
+        { property: 'og:title', content: context.title },
+      ],
+      [
+        'meta',
+        { property: 'og:url', content: `https://typeddevs.com/${canonical}` },
+      ],
+      [
+        'link',
+        { rel: 'canonical', href: `https://typeddevs.com/${canonical}` },
+      ],
+    ]
+  },
 
   // Routing
   cleanUrls: true,
