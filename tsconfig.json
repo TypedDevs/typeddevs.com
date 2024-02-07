@@ -11,15 +11,28 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "skipLibCheck": true,
     "types": ["vite/client"],
     "paths": {
-      "@/*": ["./*"],
-    },
+      "@/*": ["./*"]
+    }
   },
-  "include": ["**/*.ts", "**/*.vue"],
-  "exclude": ["node_modules", ".vitepress/dist", ".vitepress/cache"],
-  "extensions": [".ts", ".vue"],
-  "allowSyntheticDefaultImports": true,
+  "include": [
+    "**/*.ts",
+    "**/*.vue"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vitepress/dist",
+    ".vitepress/cache"
+  ],
+  "extensions": [
+    ".ts",
+    ".vue"
+  ],
+  "allowSyntheticDefaultImports": true
 }
