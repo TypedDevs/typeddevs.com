@@ -11,3 +11,5 @@ updates:
       all:
         patterns:
           - '*'
+    ignore:
+      - dependency-name: '@typescript-eslint/eslint-plugin'
