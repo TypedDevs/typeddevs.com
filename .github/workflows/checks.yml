@@ -98,5 +98,4 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build with VitePress
-        run: |
-          npm run build
+        run: npm run build
