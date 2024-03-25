@@ -1,5 +1,4 @@
-import { StorybookConfig } from '@storybook/vue3-vite'
-import path from 'path'
+import type { StorybookConfig } from '@storybook/vue3-vite'
 
 export default {
   stories: [
@@ -9,6 +8,7 @@ export default {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
+    '@chromatic-com/storybook',
     '@storybook/addon-interactions',
   ],
   framework: {
@@ -17,18 +17,5 @@ export default {
   },
   docs: {
     autodocs: 'tag',
-  },
-  staticDirs: [
-    path.resolve(__dirname, '../public'),
-  ],
-  viteFinal(config, options) {
-    config.publicDir = path.resolve(__dirname, '../public')
-
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': path.resolve(__dirname, '..'),
-    }
-
-    return config
   },
 } satisfies StorybookConfig
