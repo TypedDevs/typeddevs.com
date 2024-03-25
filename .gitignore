@@ -11,3 +11,4 @@ node_modules
 # Storybook
 build-storybook.log
 storybook-static
+*storybook.log
