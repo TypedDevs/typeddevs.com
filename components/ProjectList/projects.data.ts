@@ -9,7 +9,7 @@ export interface Project {
   website: string | null
 }
 
-export default createContentLoader<Project[]>('components/ProjectList/data/*.md', {
+export default createContentLoader<Project[]>('../components/ProjectList/data/*.md', {
   transform(projects) {
     return projects
       .map(

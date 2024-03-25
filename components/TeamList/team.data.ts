@@ -9,7 +9,7 @@ export interface Member {
   website: string | null
 }
 
-export default createContentLoader<Member[]>('components/TeamList/data/*.md', {
+export default createContentLoader<Member[]>('../components/TeamList/data/*.md', {
   transform(projects) {
     return projects
       .map(
