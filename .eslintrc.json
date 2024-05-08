@@ -6,7 +6,7 @@
   },
   "extends": [
     "plugin:vue/vue3-recommended",
-    "standard-with-typescript",
+    "love",
     "plugin:prettier/recommended",
     "plugin:storybook/recommended"
   ],
